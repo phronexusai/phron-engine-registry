@@ -1,11 +1,24 @@
 # phron-engine-registry
 
-Public index and GitHub Release assets for **Phron** engine packages (llama.cpp and later STT/TTS/etc.).
+Public index and GitHub Release assets for **Phron** engine packages.
 
-Phron installs engines from this registry. Build recipes live in the private **phron-engine-builder** repo — this tree is the catalog plus published archives, not the kitchen.
+Phron installs engines from this registry. Build recipes live in private **[phron-engine-builder](https://github.com/phronexusai/phron-engine-builder)** — this tree is the catalog plus published archives, not the kitchen.
 
-## Status
+## Index
 
-Empty scaffold. `packages.json` (or equivalent) and Release artifacts will be added when the first public cut is published.
+[`packages.json`](./packages.json) — engine list (`url`, `sha256`, `downloadable`).
 
-Do not point production nodes at third-party registries by default.
+```
+https://raw.githubusercontent.com/phronexusai/phron-engine-registry/main/packages.json
+```
+
+Releases: https://github.com/phronexusai/phron-engine-registry/releases
+
+## Current packages
+
+| Catalog name | Platform | Variant | Tag |
+|--------------|----------|---------|-----|
+| `llama.cpp-cpu` | linux-x86_64 | cpu | `llama-cpp-cpu-0.1.0` |
+| `llama.cpp-cuda` | linux-x86_64 | cuda | `llama-cpp-cuda-0.1.0` |
+
+CUDA builds need an NVIDIA driver compatible with the CUDA 13 runtime; the archive is only `llama-server`.
