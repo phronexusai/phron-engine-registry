@@ -2,7 +2,7 @@
 
 Public index and GitHub Release assets for **Phron** engine packages.
 
-Phron installs engines from this registry. Build recipes live in private **[phron-engine-builder](https://github.com/phronexusai/phron-engine-builder)** — this tree is the catalog plus published archives, not the kitchen.
+Phron installs engines from this registry. This tree is the catalog plus published archives, not engine source or build recipes.
 
 ## Index
 
