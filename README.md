@@ -16,9 +16,9 @@ Releases: https://github.com/phronexusai/phron-engine-registry/releases
 
 ## Current packages
 
-| Catalog name | Platform | Variant | Tag |
-|--------------|----------|---------|-----|
-| `llama.cpp-cpu` | linux-x86_64 | cpu | `llama-cpp-cpu-0.1.0` |
-| `llama.cpp-cuda` | linux-x86_64 | cuda | `llama-cpp-cuda-0.1.0` |
+| Catalog name | Platform | Variant | Tag | Downloadable |
+|--------------|----------|---------|-----|--------------|
+| `llama.cpp-cpu` | linux-x86_64 | cpu | `llama-cpp-cpu-b10306` | yes |
+| `llama.cpp-cuda13` | linux-x86_64 | cuda13 | `llama-cpp-cuda13-b10306` | yes |
 
-CUDA builds need an NVIDIA driver compatible with the CUDA 13 runtime; the archive is only `llama-server`.
+CUDA 13 builds need an NVIDIA driver that reports CUDA 13.x or newer; the archive is only `llama-server`. `llama.cpp-cuda` is an install alias for `llama.cpp-cuda13`.

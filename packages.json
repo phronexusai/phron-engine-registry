@@ -7,25 +7,28 @@
       "name": "llama.cpp-cpu",
       "engine": "llama.cpp",
       "variant": "cpu",
-      "version": "0.1.0",
+      "accelerator": "cpu",
+      "version": "b10306",
       "platform": "linux-x86_64",
-      "url": "https://github.com/phronexusai/phron-engine-registry/releases/download/llama-cpp-cpu-0.1.0/llama-cpp-linux-x86_64-cpu.tar.gz",
-      "sha256": "30337a834b09163b5e87c9e96257a39a54a95dd739d50cd30293f8236a7ee419",
+      "url": "https://github.com/phronexusai/phron-engine-registry/releases/download/llama-cpp-cpu-b10306/llama-cpp-linux-x86_64-cpu.tar.gz",
+      "sha256": "6cfc17f7a1641367d1f000d852c7272cb4cf9a93d2f3cbbf4e50392849004c29",
       "archive_binary": "llama-server",
       "downloadable": true,
       "notes": "Prebuilt CPU package — GGML_NATIVE=OFF, AVX2 baseline"
     },
     {
-      "name": "llama.cpp-cuda",
+      "name": "llama.cpp-cuda13",
       "engine": "llama.cpp",
-      "variant": "cuda",
-      "version": "0.1.0",
+      "variant": "cuda13",
+      "accelerator": "cuda13",
+      "cuda_major": 13,
+      "version": "b10306",
       "platform": "linux-x86_64",
-      "url": "https://github.com/phronexusai/phron-engine-registry/releases/download/llama-cpp-cuda-0.1.0/llama-cpp-linux-x86_64-cuda.tar.gz",
-      "sha256": "bdd9df38489339cafbd3f2452fb12d70ba29bc78d0510729010ca42257c6d4ef",
+      "url": "https://github.com/phronexusai/phron-engine-registry/releases/download/llama-cpp-cuda13-b10306/llama-cpp-linux-x86_64-cuda13.tar.gz",
+      "sha256": "cdb204e042c67a8bdd1cafa7a1c08cf44f334d188b9a2eb4b60e16ed0629985e",
       "archive_binary": "llama-server",
       "downloadable": true,
-      "notes": "Prebuilt CUDA package (GGML_NATIVE=OFF) — needs NVIDIA driver + CUDA 13 runtime on the host"
+      "notes": "Prebuilt CUDA 13 package (GGML_NATIVE=OFF) — NVIDIA driver CUDA 13.x+. CUDA 12 hosts need a later llama.cpp-cuda12 package."
     }
   ]
 }
